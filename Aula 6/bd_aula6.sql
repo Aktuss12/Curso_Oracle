@@ -1,0 +1,25 @@
+--------------------------------------------------------
+--  Arquivo criado - Quarta-feira-Junho-05-2013   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table ALUNO
+--------------------------------------------------------
+
+
+DROP TABLE "JOAO_SILVA"."ALUNO"; DROP TABLE "JOAO_SILVA"."EMPRESA"; DROP TABLE "JOAO_SILVA"."PEDIDOS"; DROP TABLE "JOAO_SILVA"."PEDIDO"; DROP TABLE "JOAO_SILVA"."CLIENTES"; DROP TABLE "JOAO_SILVA"."CLIENTE"; DROP TABLE "JOAO_SILVA"."PACOTES_DE_CURSOS"; DROP TABLE "JOAO_SILVA"."CURSOS"; DROP TABLE "JOAO_SILVA"."PACOTES";
+  CREATE TABLE "JOAO_SILVA"."ALUNO" 
+   (	"CODIGO" NUMBER(3,0), 
+	"NOME" VARCHAR2(40 BYTE), 
+	"CIDADE" VARCHAR2(30 BYTE), 
+	"ESTADO" CHAR(2 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into JOAO_SILVA.ALUNO
+SET DEFINE OFF;
+Insert into JOAO_SILVA.ALUNO (CODIGO,NOME,CIDADE,ESTADO) values ('1','JoÆo Ferreira','Taquaritinga','SP');
+Insert into JOAO_SILVA.ALUNO (CODIGO,NOME,CIDADE,ESTADO) values ('2','Maria Pereira','Taquaritinga','SP');
+Insert into JOAO_SILVA.ALUNO (CODIGO,NOME,CIDADE,ESTADO) values ('3','Jos‚ Francisco de Souza','Londrina','PR');
+Insert into JOAO_SILVA.ALUNO (CODIGO,NOME,CIDADE,ESTADO) values ('4','Aparecida Machado','Araraquara','SP');
